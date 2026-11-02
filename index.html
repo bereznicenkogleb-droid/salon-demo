@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФЛЁР — салон красоты в Москве</title>
+  <meta name="description" content="Салон красоты ФЛЁР: стрижки, окрашивание, маникюр, педикюр, брови и макияж. Четыре мастера, запись онлайн за минуту. Москва, Большая Дмитровка, 9.">
+  <meta name="theme-color" content="#f7f2ec">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23b06a57'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='18' font-weight='700' fill='%23fffaf6' text-anchor='middle'%3E%D0%A4%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "ФЛЁР",
+    "description": "Салон красоты: волосы, ногти, брови и макияж.",
+    "telephone": "+7 999 240-18-06",
+    "priceRange": "500–9 500 ₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Большая Дмитровка, 9",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Su 10:00-21:00"
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="ФЛЁР — на главную">
+        ФЛЁР<span>.</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Работы</a>
+        <a href="#masters">Мастера</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+79992401806">+7 999 240-18-06</a>
+        <a class="btn btn--primary header__cta" href="#booking">Записаться</a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Салон красоты · Москва · с 2018 года</p>
+          <h1>Красота,<br>к которой<br><em>возвращаются</em></h1>
+          <p class="hero__lead">
+            Волосы, ногти, брови и макияж в одном месте. Маленький салон
+            на четверых мастеров — без очередей, навязывания и «допишите
+            ещё одну процедуру».
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#booking">Записаться</a>
+            <a class="btn btn--ghost" href="#services">Прайс и услуги</a>
+          </div>
+          <dl class="hero__meta">
+            <div>
+              <dt>Ежедневно</dt>
+              <dd>10:00 — 21:00</dd>
+            </div>
+            <div>
+              <dt>Адрес</dt>
+              <dd>Дмитровка, 9</dd>
+            </div>
+            <div>
+              <dt>Запись</dt>
+              <dd>за 1 минуту</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__media">
+          <img src="assets/hero.jpg" alt="Интерьер салона красоты ФЛЁР: кресла, зеркала, свет" fetchpriority="high">
+          <div class="hero__badge">
+            <strong>4,9</strong>
+            <span>рейтинг<br>на Яндекс.Картах</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Стрижки</span><i></i>
+        <span>Окрашивание</span><i></i>
+        <span>Маникюр</span><i></i>
+        <span>Педикюр</span><i></i>
+        <span>Брови</span><i></i>
+        <span>Макияж</span><i></i>
+        <span>Стрижки</span><i></i>
+        <span>Окрашивание</span><i></i>
+        <span>Маникюр</span><i></i>
+        <span>Педикюр</span><i></i>
+        <span>Брови</span><i></i>
+        <span>Макияж</span><i></i>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">01 — Услуги и цены</p>
+          <h2>Что делаем</h2>
+          <p class="section__lead">
+            Финальные цены без «от» и сюрпризов в конце визита.
+            Время указано вместе с мытьём и укладкой.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="service-group reveal">
+            <h3>Волосы</h3>
+            <ul class="price-list">
+              <li>
+                <span class="price__name">Женская стрижка<small>60 мин</small></span>
+                <span class="price__value">3 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Укладка<small>45 мин</small></span>
+                <span class="price__value">2 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Окрашивание в один тон<small>120 мин</small></span>
+                <span class="price__value">6 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Балаяж, растяжка цвета<small>180 мин</small></span>
+                <span class="price__value">9 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Восстановление Olaplex<small>30 мин</small></span>
+                <span class="price__value">2 500 ₽</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-group reveal">
+            <h3>Ногти</h3>
+            <ul class="price-list">
+              <li>
+                <span class="price__name">Маникюр с покрытием<small>90 мин</small></span>
+                <span class="price__value">2 800 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Педикюр<small>90 мин</small></span>
+                <span class="price__value">3 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Наращивание<small>150 мин</small></span>
+                <span class="price__value">4 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Дизайн, 1 ноготь<small>5 мин</small></span>
+                <span class="price__value">150 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Снятие покрытия<small>30 мин</small></span>
+                <span class="price__value">500 ₽</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-group reveal">
+            <h3>Брови и макияж</h3>
+            <ul class="price-list">
+              <li>
+                <span class="price__name">Коррекция и окрашивание бровей<small>45 мин</small></span>
+                <span class="price__value">1 800 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Ламинирование бровей<small>60 мин</small></span>
+                <span class="price__value">2 800 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Дневной макияж<small>60 мин</small></span>
+                <span class="price__value">3 500 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Вечерний макияж<small>90 мин</small></span>
+                <span class="price__value">5 000 ₽</span>
+              </li>
+              <li>
+                <span class="price__name">Причёска<small>60 мин</small></span>
+                <span class="price__value">4 000 ₽</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="services__note">
+          Не знаете, какая услуга нужна? Напишите в Telegram — подскажем
+          и назовём точную сумму до записи.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">02 — Работы</p>
+          <h2>Как это выглядит</h2>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide reveal">
+            <img src="assets/makeup.jpg" alt="Кисти для макияжа с розовыми ручками" loading="lazy">
+            <figcaption>Макияж</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall reveal">
+            <img src="assets/nails.jpg" alt="Французский маникюр с блёстками на одном ногте" loading="lazy">
+            <figcaption>Маникюр</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/hair.jpg" alt="Расчёска и гладкие светлые волосы после укладки" loading="lazy">
+            <figcaption>Уход и укладка</figcaption>
+          </figure>
+          <div class="gallery__note reveal">
+            <p class="gallery__quote">«Хорошая стрижка видна не в салоне, а через неделю — когда её не надо укладывать».</p>
+            <p class="gallery__author">Алина Ветрова, стилист-колорист</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="masters">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">03 — Мастера</p>
+          <h2>Кто с вами работает</h2>
+        </div>
+
+        <div class="masters">
+          <article class="master reveal">
+            <div class="master__avatar" aria-hidden="true">АВ</div>
+            <h3>Алина Ветрова</h3>
+            <p class="master__role">Стилист-колорист · 9 лет</p>
+            <p>Блонд, балаяж и восстановление волос после окрашивания.</p>
+            <ul class="master__tags">
+              <li>Окрашивание</li>
+              <li>Стрижки</li>
+            </ul>
+          </article>
+          <article class="master reveal">
+            <div class="master__avatar" aria-hidden="true">МС</div>
+            <h3>Мария Соколова</h3>
+            <p class="master__role">Мастер маникюра · 6 лет</p>
+            <p>Аппаратный маникюр, укрепление и спокойный дизайн без лишнего.</p>
+            <ul class="master__tags">
+              <li>Маникюр</li>
+              <li>Педикюр</li>
+            </ul>
+          </article>
+          <article class="master reveal">
+            <div class="master__avatar" aria-hidden="true">КЛ</div>
+            <h3>Ксения Лебедева</h3>
+            <p class="master__role">Бровист · 5 лет</p>
+            <p>Коррекция формы, ламинирование и макияж под событие.</p>
+            <ul class="master__tags">
+              <li>Брови</li>
+              <li>Макияж</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--blush" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">04 — Отзывы</p>
+          <h2>Что говорят</h2>
+        </div>
+
+        <div class="reviews">
+          <blockquote class="review reveal">
+            <p>«Пришла на стрижку, ушла с формой, которую наконец могу сама уложить за пять минут. Алина расспросила про волосы, а не просто сделала "как на фото"».</p>
+            <footer>Ольга, 31 · Яндекс.Карты</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p>«Хожу на маникюр полтора года. Ни разу не было спешки или боли, покрытие держится ровно три недели. Записываюсь онлайн, ждать не приходится».</p>
+            <footer>Анна, 27 · Яндекс.Карты</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p>«Делала макияж на свадьбу — продержался до утра, на фото всё как надо. Отдельное спасибо за то, что не навязывали дополнительные услуги».</p>
+            <footer>Ирина, 34 · Яндекс.Карты</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+      <div class="container certificate__inner">
+        <div>
+          <p class="certificate__label">Подарок</p>
+          <h2>Сертификат на любую услугу</h2>
+          <p>От 3 000 ₽. Красивая карточка в конверте — забрать можно в салоне или получить электронно.</p>
+        </div>
+        <a class="btn btn--light" href="#booking">Выбрать сертификат</a>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container booking">
+        <div class="booking__text">
+          <p class="section__num">05 — Запись</p>
+          <h2>Запись за минуту</h2>
+          <p>
+            Выберите услугу, мастера и свободное время. Заявка уйдёт
+            в Telegram салона — мы подтвердим запись и напомним за день.
+          </p>
+          <ul class="booking__points">
+            <li>Без предоплаты</li>
+            <li>Перенос за 3 часа</li>
+            <li>Напоминание в день визита</li>
+          </ul>
+          <p class="booking__note">
+            Или позвоните:
+            <a href="tel:+79992401806">+7 999 240-18-06</a>
+          </p>
+        </div>
+
+        <form class="form" id="booking-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 999 000-00-00" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="service">Услуга</label>
+            <select id="service" name="service" required>
+              <option value="" selected disabled>Выберите услугу</option>
+              <optgroup label="Волосы">
+                <option>Женская стрижка — 3 500 ₽</option>
+                <option>Укладка — 2 500 ₽</option>
+                <option>Окрашивание в один тон — 6 500 ₽</option>
+                <option>Балаяж, растяжка цвета — 9 500 ₽</option>
+                <option>Восстановление Olaplex — 2 500 ₽</option>
+              </optgroup>
+              <optgroup label="Ногти">
+                <option>Маникюр с покрытием — 2 800 ₽</option>
+                <option>Педикюр — 3 500 ₽</option>
+                <option>Наращивание — 4 500 ₽</option>
+                <option>Снятие покрытия — 500 ₽</option>
+              </optgroup>
+              <optgroup label="Брови и макияж">
+                <option>Коррекция и окрашивание бровей — 1 800 ₽</option>
+                <option>Ламинирование бровей — 2 800 ₽</option>
+                <option>Дневной макияж — 3 500 ₽</option>
+                <option>Вечерний макияж — 5 000 ₽</option>
+                <option>Причёска — 4 000 ₽</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="master">Мастер</label>
+              <select id="master" name="master">
+                <option selected>Любой свободный</option>
+                <option>Алина Ветрова</option>
+                <option>Мария Соколова</option>
+                <option>Ксения Лебедева</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Дата</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+          </div>
+
+          <fieldset class="slots">
+            <legend>Свободное время</legend>
+            <div class="slots__grid" id="slots" aria-live="polite">
+              <span class="slots__hint">Сначала выберите дату</span>
+            </div>
+            <input type="hidden" id="time" name="time" value="">
+          </fieldset>
+
+          <button class="btn btn--primary btn--full" type="submit">Отправить заявку</button>
+          <p class="form__hint" id="form-status" role="status">
+            Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="contacts">
+      <div class="container contacts">
+        <div class="contacts__card reveal">
+          <p class="section__num">06 — Контакты</p>
+          <h2>Как нас найти</h2>
+          <address>
+            Москва, Большая Дмитровка, 9<br>
+            второй этаж, вход с улицы
+          </address>
+          <p class="contacts__hours">Ежедневно с 10:00 до 21:00</p>
+          <div class="contacts__links">
+            <a href="tel:+79992401806">+7 999 240-18-06</a>
+            <a href="https://t.me/fler_beauty" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://wa.me/79992401806" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="map reveal" role="img" aria-label="Схема расположения: Большая Дмитровка, 9">
+          <div class="map__grid"></div>
+          <div class="map__pin"><span>ФЛЁР</span></div>
+          <a class="map__link" href="https://yandex.ru/maps/?text=Москва, Большая Дмитровка, 9" target="_blank" rel="noopener">Открыть в Яндекс.Картах</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--small" href="#top">ФЛЁР<span>.</span></a>
+      <p>© <span id="year">2026</span> Салон красоты ФЛЁР. Волосы, ногти, брови, макияж.</p>
+      <div class="footer__links">
+        <a href="#services">Услуги</a>
+        <a href="#booking">Записаться</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
